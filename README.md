@@ -1,4 +1,4 @@
-# Website for ESSECT (Learning Project)
+# Website for ESSECT (ESSECT Website Project)
 
 This project is a **website for ESSECT (Higher School of Economic and Commercial Sciences of Tunis)**, built using **HTML, CSS, PHP, and JavaScript**. It was developed as part of a learning exercise to enhance web development skills.
 
