@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&family=Noto+Sans:wght@100..900&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    overflow: hidden; /* Prevent page overflow */
+}
+
+/* Container */
+.container {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevents the content from overflowing */
+}
+
+/* Title */
+.container .title {
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+/* Form */
+form .user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+}
+
+.input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    border-color: #9b59b6;
+}
+
+/* Submit Button */
+.container .button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container .button input {
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.container .button input:hover {
+    background: linear-gradient(135deg, #9b59b6, #71b7e6);
+}
+
+/* Register Link */
+.register-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #9b59b6;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .container .title {
+        font-size: 24px; /* Adjust title font size */
+    }
+
+    .container .button input {
+        font-size: 16px; /* Adjust button font size */
+    }
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+<div class="container">
+    <div class="title">Registration</div>
+    <form id="registrationForm" action="register.php" method="POST">
+        <!-- User Details -->
+        <div class="user-details">
+            <div class="input-box">
+                <label class="details" for="full-name">Full Name</label>
+                <input type="text" id="full-name" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+                <label class="details" for="cin">CIN</label>
+                <input type="text" id="cin" placeholder="Enter your CIN" required>
+            </div>
+            <div class="input-box">
+                <label class="details" for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+                <label class="details" for="phone">Phone Number</label>
+                <input type="text" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="input-box">
+                <label class="details" for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="input-box">
+                <label class="details" for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+            </div>
+        </div>
+
+        <!-- Gender Section -->
+        <div class="gender-details">
+            <label class="details"><strong>Gender:</strong></label>
+            <div class="category">
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="Male" required> Male
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender" value="Female" required> Female
+                </label>
+            </div>
+        </div>
+
+        <!-- Status Dropdown -->
+        <div class="input-box">
+            <label for="status" class="details"><strong>Status:</strong></label>
+            <select id="status" required>
+                <option value="" disabled selected>Select your status</option>
+                <option value="Administrator">Administrator</option>
+                <option value="Student">Student</option>
+                <option value="Professor">Professor</option>
+            </select>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="button">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</div>
+
+<!-- JavaScript Files -->
+<script src="registration.js" defer></script> <!-- Link to external JS file -->
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Chat</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav>
+    <a href="index.html"><img src="images/lo-removebg-preview.png" alt="Essec Logo"></a>
+    <div class="navigation">
+        <ul>
+            <li><a href="index.html"><strong>Home</strong></a></li>
+            <li><a href="about.html"><strong>About</strong></a></li>
+            <li><a href="student.html"><strong>Student</strong></a></li>
+            <li><a href="Specialties.html"><strong>Specialties</strong></a></li>
+            <li><a href="logout.php" class="yellow"><strong>Logout</strong></a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="contact-container">
+    <h2>Forum Chat</h2>
+
+    <!-- Display previous chat messages -->
+    <div class="chat-box" id="chat-box">
+        <?php include 'contact.php'; echo $chatHistory; ?>
+    </div>
+
+    <!-- Chat form to submit messages -->
+    <form id="chat-form" method="POST">
+        <input type="text" name="name" id="username" placeholder="Your Name" value="Default User" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<!-- Footers -->
+<section id="ftt">
+    <footer id="footer">
+        <div class="footer-container">
+            <!-- Footer content here -->
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ESSECT. All rights reserved.</p>
+        </div>
+    </footer>
+</section>
+
+<script src="contact.js"></script>
+</body>
+</html>
